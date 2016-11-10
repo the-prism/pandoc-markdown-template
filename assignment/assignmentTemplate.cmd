@@ -1,4 +1,3 @@
+@echo off
 set /p inputFile= "Markdown : "
-set /p outputFile= "PDF : "
-pandoc --from markdown --to latex --template "C:\Users\Thomas\Documents\Pandoc\assignment\template.tex" --out %outputFile% --latex-engine xelatex %inputFile%
-pause
+pandoc --from markdown --to latex --template "C:\Users\Thomas\Documents\Pandoc\assignment\template.tex" --out %inputFile%.pdf --latex-engine xelatex %inputFile%
